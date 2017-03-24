@@ -13,7 +13,7 @@ namespace eSaleX.Controllers
         /// </summary>
         /// <returns></returns>
         public ActionResult Index()
-        {
+        { 
             //Models.OrderService orderService = new Models.OrderService();
             //var order = orderService.GetorderById("111");
             //ViewBag.CustId = order.CustID;
