@@ -10,6 +10,7 @@ namespace eSaleX.Models
         /// <summary>
         /// 訂單編號
         /// </summary>
+  
         public int OrderID { get; set; }
 
         /// <summary>

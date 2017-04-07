@@ -47,9 +47,12 @@ namespace eSaleX.Models
         /// 取得訂單
         /// </summary>
         /// <returns></returns>
-        public List<Models.Order> Getorders()
+        public List<Models.Order> GetOrders()
         {
-            return new List<Order>();
+            List<Models.Order> result = new List<Order>();
+            result.Add(new Order() { CustID = "GSS", CustName = "瑞陽資訊", OrderID = 1, OrderDate = DateTime.Parse("2017/04/07")});
+            result.Add(new Order() { CustID = "NPOIS", CustName = "往阮資訊", OrderID = 2, OrderDate = DateTime.Parse("2017/04/08") });
+            return result;
         }
 
         internal void InsertOrder(Order order)

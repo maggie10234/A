@@ -14,12 +14,8 @@ namespace eSaleX.Controllers
         /// <returns></returns>
         public ActionResult Index()
         { 
-            //Models.OrderService orderService = new Models.OrderService();
-            //var order = orderService.GetorderById("111");
-            //ViewBag.CustId = order.CustID;
-
-
-            
+            Models.OrderService orderService = new Models.OrderService();
+            ViewBag.Data = orderService.GetOrders();
 
             return View();
         }
@@ -30,7 +26,9 @@ namespace eSaleX.Controllers
         /// <returns></returns>
         public ActionResult InsertOrder()
         {
-            return View();
+            Models.Order order = new Models.Order();
+            order.CustName = "瑞陽資訊";
+            return View(order);
         }
 
         /// <summary>
